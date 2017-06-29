@@ -1,0 +1,29 @@
+#phong shading with 2 lights
+{
+	phong
+	surface (1, 1, 1) .5 16
+	rotate Y -45
+
+	camera -1 -1 1 1 1 50
+
+	translate 1 0  2
+	ambient (.5, .5, .5)
+	light 1 1 1 1 .1
+
+	translate -3 0 0 
+	light 1 1 1 1 1 .1
+	translate 2 0 -2
+
+	scale 2 2 2
+	translate 0 0 3
+	mesh boxcolor
+	translate 0 0 -3
+	scale .5 .5 .5
+
+	rotate X 45
+	translate 0 0 3
+	scale 2 2 2
+
+	translate -3 -3 3
+	mesh boxcolor
+}

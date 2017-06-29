@@ -1,0 +1,27 @@
+#flat shading with 1 light
+{
+	flat
+
+	rotate Y -45
+
+	camera -1 -1 1 1 1 50
+
+	translate 1 0  1
+	ambient (.3, .3, .3)
+	light .8 .8 .8 1 .1
+	translate 0 0 -1
+
+	scale 2 2 2
+	translate 0 0 3
+	mesh box
+	translate 0 0 -3
+	scale .5 .5 .5
+
+	rotate X 45
+	translate 0 0 3
+	scale 2 2 2
+
+	translate -3 -3 3
+	mesh box
+}
+
