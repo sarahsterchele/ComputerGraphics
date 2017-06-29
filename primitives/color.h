@@ -1,9 +1,8 @@
 #ifndef COLOR_H
 #define COLOR_H
 
-class Color
+struct Color
 {
-public:
     float r;
     float g;
     float b;
